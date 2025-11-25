@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Profile</title>
+  <style>
+    body { font-family: Arial; background:#eef2f3; display:flex; justify-content:center; padding-top:40px; }
+    .container { background:white; padding:25px; width:420px; border-radius:10px; box-shadow:0 6px 12px rgba(0,0,0,0.12);}
+    input, textarea { width:100%; padding:8px; margin-top:6px; border-radius:6px; border:1px solid #ccc; }
+    label { font-weight:bold; margin-top:10px; display:block; }
+    button { margin-top:12px; width:100%; padding:10px; background:#4A90E2; color:white; border:none; border-radius:6px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Personal Profile Form</h2>
+    <form action="ProfileServlet" method="POST">
+      <label>Name</label><input type="text" name="name" required>
+      <label>Student ID</label><input type="text" name="studentID" required>
+      <label>Program</label><input type="text" name="program" required>
+      <label>Email</label><input type="email" name="email" required>
+      <label>Hobbies</label><input type="text" name="hobbies" placeholder="e.g., Reading, Gaming">
+      <label>Short Introduction</label><textarea name="intro" rows="4" placeholder="Tell us about yourself"></textarea>
+      <button type="submit">Submit Profile</button>
+    </form>
+  </div>
+</body>
+</html>
